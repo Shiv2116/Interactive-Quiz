@@ -1,0 +1,92 @@
+/* Quiz.js CSS */
+
+/* Container for the entire quiz */
+.quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #007bff; /* Default border color */
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease; /* Add smooth transition for border color change */
+  }
+  
+  /* Add red border color for wrong answers */
+  .quiz-container.wrong-answer {
+    border-color: #ff0000; /* Red border color for wrong answers */
+  }
+  
+  /* Quiz title */
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #007bff;
+  }
+  
+  /* Question text */
+  #question-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  /* List of answer choices */
+  #choices-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Individual answer choice */
+  li {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  /* Radio button styles */
+  input[type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  /* Submit button styles */
+  #submit-button, #next-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
+  /* Disable button styles when necessary */
+  #submit-button:disabled, #next-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Feedback message styles */
+  #feedback {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  /* Score display */
+  #score {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Quiz completion message */
+  #feedback.quiz-completed {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #28a745;
+  }
+  
